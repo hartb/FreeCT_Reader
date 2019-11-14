@@ -11,7 +11,7 @@ rebuild:
 	rm -f libfct_read.a
 
 install:
-	mkdir -p $(INSTALL_PATH)/include/fct
+	mkdir -p $(INSTALL_PATH)/lib/
 	mkdir -p $(INSTALL_PATH)/include/fct/include/
 	cp build/libfct_read.a $(INSTALL_PATH)/lib/
 	mv build/fct_read.h $(INSTALL_PATH)/include/fct/
