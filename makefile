@@ -18,15 +18,11 @@ install:
 	cp build/*.h $(INSTALL_PATH)/include/fct/include/
 
 uninstall:
-	rm $(INSTALL_PATH)/include/fct/fct_read.h
-	rm $(INSTALL_PATH)/include/fct/include/ptr.h
-	rm $(INSTALL_PATH)/include/fct/include/ctd.h
-	rm $(INSTALL_PATH)/include/fct/include/dicom.h
-	rm $(INSTALL_PATH)/include/fct/include/siemens_ima.h
-	rm $(INSTALL_PATH)/include/fct/include/binary.h
+	rm -f $(INSTALL_PATH)/include/fct/fct_read.h
+	rm -f $(INSTALL_PATH)/include/fct/include/*.h
 	rmdir $(INSTALL_PATH)/include/fct/include
 	rmdir $(INSTALL_PATH)/include/fct
-	rm $(INSTALL_PATH)/lib/libfct_read.a
+	rm -f $(INSTALL_PATH)/lib/libfct_read.a
 
 .PHONY: all install uninstall clean
 
