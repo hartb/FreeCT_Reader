@@ -11,22 +11,22 @@ rebuild:
 	rm -f libfct_read.a
 
 install:
-	mkdir -p $(INSTALL_PATH)include/fct
-	mkdir -p $(INSTALL_PATH)include/fct/include/
-	cp build/libfct_read.a $(INSTALL_PATH)lib/
-	mv build/fct_read.h $(INSTALL_PATH)include/fct/
-	cp build/*.h $(INSTALL_PATH)include/fct/include/
+	mkdir -p $(INSTALL_PATH)/include/fct
+	mkdir -p $(INSTALL_PATH)/include/fct/include/
+	cp build/libfct_read.a $(INSTALL_PATH)/lib/
+	mv build/fct_read.h $(INSTALL_PATH)/include/fct/
+	cp build/*.h $(INSTALL_PATH)/include/fct/include/
 
 uninstall:
-	rm $(INSTALL_PATH)include/fct/fct_read.h
-	rm $(INSTALL_PATH)include/fct/include/ptr.h
-	rm $(INSTALL_PATH)include/fct/include/ctd.h
-	rm $(INSTALL_PATH)include/fct/include/dicom.h
-	rm $(INSTALL_PATH)include/fct/include/siemens_ima.h
-	rm $(INSTALL_PATH)include/fct/include/binary.h
-	rmdir $(INSTALL_PATH)include/fct/include
-	rmdir $(INSTALL_PATH)include/fct
-	rm $(INSTALL_PATH)lib/libfct_read.a
+	rm $(INSTALL_PATH)/include/fct/fct_read.h
+	rm $(INSTALL_PATH)/include/fct/include/ptr.h
+	rm $(INSTALL_PATH)/include/fct/include/ctd.h
+	rm $(INSTALL_PATH)/include/fct/include/dicom.h
+	rm $(INSTALL_PATH)/include/fct/include/siemens_ima.h
+	rm $(INSTALL_PATH)/include/fct/include/binary.h
+	rmdir $(INSTALL_PATH)/include/fct/include
+	rmdir $(INSTALL_PATH)/include/fct
+	rm $(INSTALL_PATH)/lib/libfct_read.a
 
 .PHONY: all install uninstall clean
 
